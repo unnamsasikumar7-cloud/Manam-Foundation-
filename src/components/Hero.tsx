@@ -50,31 +50,32 @@ const Hero = () => {
             ))}
           </CarouselContent>
         </Carousel>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/5 via-background/40 to-background/90" />
       </div>
 
       {/* Overlay Content */}
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4 py-20">
-        <div className="container max-w-4xl mx-auto text-center space-y-8">
+        <div className="container max-w-5xl mx-auto text-center space-y-8">
           {/* Text Content */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <p className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight drop-shadow-lg">
+              <p className="fade-up text-3xl md:text-5xl lg:text-6xl font-bold tracking-[0.08em] text-foreground leading-tight drop-shadow-lg">
                 Together, we can turn compassion into action.
               </p>
-              <p className="text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed font-medium drop-shadow-lg">
+              <p className="fade-up text-xl md:text-2xl lg:text-3xl text-foreground/90 leading-relaxed font-medium drop-shadow-lg delay-[120ms]">
                 Help us support the homeless, the hungry, and the forgotten.
               </p>
             </div>
             
-            <p className="text-base md:text-lg text-foreground/90 pt-2 drop-shadow-md">
+            <p className="fade-up text-base md:text-lg text-muted-foreground pt-2 drop-shadow-md delay-[220ms]">
               Started on January 1st, 2024 • 100+ donations completed
             </p>
             
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+            <div className="fade-up flex flex-col sm:flex-row gap-4 justify-center items-center pt-6 delay-[320ms]">
               <Button 
                 size="lg" 
-                className="gap-2 text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-all"
+                className="gap-2 text-lg px-8 py-6 shadow-lg hover:shadow-xl"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 <Heart className="h-5 w-5" />

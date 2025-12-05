@@ -13,7 +13,7 @@ const UpcomingEvents = () => {
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Calendar className="h-8 w-8 text-primary" />
+            <Calendar className="h-8 w-8 text-[hsl(var(--accent-secondary))]" />
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Upcoming Events
             </h2>
@@ -27,7 +27,7 @@ const UpcomingEvents = () => {
           <div className="flex justify-center items-center">
             <div className="max-w-2xl w-full">
               {posterImages.map((poster, index) => (
-                <Card key={index} className="border-2 hover:shadow-lg transition-shadow duration-300 overflow-hidden">
+                <Card key={index} className="card-surface overflow-hidden">
                   <CardContent className="p-0">
                     <img
                       src={poster}

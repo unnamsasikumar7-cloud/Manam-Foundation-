@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -10,8 +10,8 @@ const Contact = () => {
           Get in Touch
         </h2>
         
-        <div className="flex justify-center">
-          <Card className="border-2 hover:shadow-lg transition-shadow duration-300 max-w-lg w-full">
+        <div className="grid gap-8 md:grid-cols-2">
+          <Card className="card-surface max-w-lg w-full mx-auto">
             <CardContent className="pt-6 text-center space-y-4">
               <div className="flex justify-center">
                 <div className="p-4 rounded-full bg-primary/10">
@@ -34,10 +34,39 @@ const Contact = () => {
               </div>
             </CardContent>
           </Card>
+
+          <Card className="card-surface max-w-lg w-full mx-auto">
+            <CardContent className="pt-6 text-center space-y-4">
+              <div className="flex justify-center">
+                <div className="p-4 rounded-full bg-secondary/10">
+                  <Instagram className="h-8 w-8 text-secondary" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-foreground">Instagram</h3>
+                <p className="text-muted-foreground italic mb-4">
+                  “Every like is a little light of hope. Follow our kindness journey.”
+                </p>
+                <Button 
+                  className="gap-2"
+                  asChild
+                >
+                  <a 
+                    href="https://www.instagram.com/manam__foundation?igsh=MWdsOTZtY3premNnZw==" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <Instagram className="h-4 w-4" />
+                    Visit Instagram
+                  </a>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
         
         <div className="mt-12 text-center">
-          <Card className="border-2 bg-accent">
+          <Card className="card-surface max-w-3xl mx-auto">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center gap-4">
                 <MessageCircle className="h-12 w-12 text-primary" />

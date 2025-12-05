@@ -41,11 +41,11 @@ const ImpactStats = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((stat, index) => (
-            <Card key={index} className="border-2 hover:shadow-lg transition-shadow duration-300">
+            <Card key={index} className="card-surface group">
               <CardContent className="pt-6 text-center space-y-4">
                 <div className="flex justify-center">
-                  <div className="p-4 rounded-full bg-primary/10">
-                    <stat.icon className="h-8 w-8 text-primary" />
+                  <div className="p-4 rounded-full bg-primary/10 transition-all duration-300 group-hover:bg-[hsl(var(--accent-secondary))]/10">
+                    <stat.icon className="h-8 w-8 text-primary group-hover:text-[hsl(var(--accent-secondary))]" />
                   </div>
                 </div>
                 <div className="space-y-2">

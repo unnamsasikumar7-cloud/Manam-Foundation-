@@ -10,7 +10,7 @@ const OrphanageSupport = () => {
           Orphanage We Support
         </h2>
         
-        <Card className="border-2 shadow-xl mt-12">
+        <Card className="card-surface mt-12">
           <CardHeader className="text-center space-y-4 pb-4">
             <div className="flex justify-center">
               <div className="p-4 rounded-full bg-primary/10">
@@ -25,7 +25,7 @@ const OrphanageSupport = () => {
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              <Card className="bg-accent border-2">
+              <Card className="card-surface bg-accent/40 border-none">
                 <CardContent className="pt-6 text-center">
                   <div className="text-3xl font-bold text-primary mb-2">₹2,000</div>
                   <div className="text-foreground font-medium">Vegetarian Meal</div>
@@ -33,7 +33,7 @@ const OrphanageSupport = () => {
                 </CardContent>
               </Card>
               
-              <Card className="bg-accent border-2">
+              <Card className="card-surface bg-accent/40 border-none">
                 <CardContent className="pt-6 text-center">
                   <div className="text-3xl font-bold text-primary mb-2">₹4,000</div>
                   <div className="text-foreground font-medium">Non-Vegetarian Meal</div>

@@ -49,7 +49,7 @@ const MajorEvents = () => {
                 }`}
               >
                 <div className="w-full md:w-5/12">
-                  <Card className="border-2 hover:shadow-lg transition-shadow duration-300">
+                  <Card className="card-surface">
                     <CardContent className="pt-6">
                       <div className="flex items-start gap-4">
                         <div className={`p-3 rounded-full ${

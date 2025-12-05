@@ -66,7 +66,7 @@ const Navbar = () => {
                 key={link.label}
                 variant="ghost"
                 className={cn(
-                  "text-foreground hover:text-primary hover:bg-accent transition-colors relative",
+                  "btn-floating text-foreground hover:text-primary hover:bg-accent relative",
                   link.highlight && "text-primary"
                 )}
                 onClick={link.action}
@@ -78,7 +78,7 @@ const Navbar = () => {
               </Button>
             ))}
             <Button
-              className="ml-4"
+              className="ml-4 btn-floating"
               onClick={() => scrollToSection("contact")}
             >
               Donate
@@ -109,7 +109,7 @@ const Navbar = () => {
                   key={link.label}
                   variant="ghost"
                   className={cn(
-                    "w-full justify-start text-foreground hover:text-primary hover:bg-accent",
+                    "btn-floating w-full justify-start text-foreground hover:text-primary hover:bg-accent",
                     link.highlight && "text-primary"
                   )}
                   onClick={link.action}

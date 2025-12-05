@@ -57,7 +57,7 @@ const Gallery = () => {
             <CarouselContent>
               {galleryImages.map((image, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <Card className="overflow-hidden border-2 hover:shadow-lg transition-shadow duration-300">
+                  <Card className="overflow-hidden card-surface p-0">
                     <CardContent className="p-0">
                       <img 
                         src={image.src} 

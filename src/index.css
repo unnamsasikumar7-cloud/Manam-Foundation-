@@ -20,11 +20,13 @@ All colors MUST be HSL.
     --popover: 20 5% 90%;
     --popover-foreground: 24 9% 10%;
 
-    --primary: 37 92% 50%;
+    --primary: 37 92% 50%; 
     --primary-foreground: 47 100% 96%;
 
     --secondary: 220 70% 45%;
     --secondary-foreground: 60 9% 97%;
+
+    --accent-secondary: 192 78% 44%;
 
     --muted: 23 5% 82%;
     --muted-foreground: 24 9% 10%;
@@ -156,5 +158,48 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card-surface {
+    border-radius: 1.5rem;
+    border: 1px solid hsl(var(--border) / 0.6);
+    background-color: hsl(var(--card) / 0.92);
+    backdrop-filter: blur(18px);
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px hsl(0 0% 0% / 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-surface:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 45px hsl(0 0% 0% / 0.12);
+  }
+
+  .btn-floating {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .btn-floating:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px hsl(0 0% 0% / 0.12);
+  }
+}
+
+@layer utilities {
+  .fade-up {
+    animation: fade-up 0.9s ease both;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
